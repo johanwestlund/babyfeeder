@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    style="@android:style/Theme.Holo.Dialog"
+    android:background="@color/black_transparent"
+    >
+
+    <Button
+        android:id="@+id/oliverButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oliver"
+        android:typeface="serif"
+        android:textSize="25sp"
+        android:textStyle="italic" 
+        style="@android:style/Widget.Holo.Button"
+        />
+
+    <Button
+        android:id="@+id/vilmaButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vilma"
+        android:typeface="serif"
+        android:textSize="25sp"
+        android:textStyle="italic" 
+        style="@android:style/Widget.Holo.Button"
+        />
+
+</LinearLayout>

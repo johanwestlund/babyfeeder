@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NAN Tracker</string>
+    <string name="action_settings">Johan rules the world!</string>
+    <string name="olivers_image_string">Olivers Image</string>
+    <string name="oliver_string">Oliver</string>
+    <string name="vilma_string">Vilma</string>
+    <string name="settings_button">Settings</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_settings">Settings</string>
+
+</resources>

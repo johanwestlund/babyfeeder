@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper_2"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+    
+    <include layout="@layout/settings_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameLine"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_horizontal_margin"/>
+    
+    <include layout="@layout/settings_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weightLine"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_horizontal_margin"/>
+    
+    <include layout="@layout/settings_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/goalLine"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <View 
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        
+        <ImageButton 
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/save_icon"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:onClick="saveButtonOnClick"/>
+        
+    </LinearLayout>
+    
+</LinearLayout>
+    

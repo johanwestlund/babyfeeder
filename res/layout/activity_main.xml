@@ -1,0 +1,275 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_2"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.example.babyfeeder.MainActivity" >
+
+    <LinearLayout android:id="@+id/OliverLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/black_transparent"
+        android:orientation="vertical">
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <ImageView
+            	android:id="@+id/OliverImage"
+            	android:layout_width="60dp"
+            	android:layout_height="60dp"
+            	android:layout_gravity="left"
+            	android:scaleType="fitCenter"
+            	android:padding="@dimen/activity_horizontal_margin"
+            	android:contentDescription="@string/olivers_image_string"
+            	android:src="@drawable/oliver_icon" />
+            
+            <TextView 
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:textColor="@color/white_transparent"
+                android:typeface="serif"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:text="@string/oliver_string"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            
+            <ImageView 
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_gravity="left|center_vertical"
+                android:scaleType="fitCenter"
+                android:alpha="0.6"
+                android:src="@drawable/scale3"/>
+            
+            <TextView 
+                android:id="@+id/weightTextView"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@color/white_transparent"
+                android:typeface="serif"
+                android:textSize="18sp"
+                android:text="6200 g"/>
+            
+            <TextView 
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@color/white_transparent"
+                android:typeface="serif"
+                android:textSize="25sp"
+                android:text="\u03BC"/>
+            
+            <TextView 
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@color/white_transparent"
+                android:typeface="serif"
+                android:textSize="18sp"
+                android:text="6800 g"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            
+            <ImageView 
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_gravity="left|center_vertical"
+                android:scaleType="fitCenter"
+                android:alpha="0.6"
+                android:src="@drawable/bottle_image"/>
+            
+            <TextView 
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@color/white_transparent"
+                android:typeface="serif"
+                android:textSize="18sp"
+                android:text="150 ml"/>
+            
+            <ImageView 
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_gravity="left|center_vertical"
+                android:scaleType="fitCenter"
+                android:alpha="0.6"
+                android:src="@drawable/clock_image"/>
+            
+            <TextView 
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@color/white_transparent"
+                android:typeface="serif"
+                android:textSize="18sp"
+                android:text="18:30"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout            
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            
+            <include layout="@layout/progressbar_layout"
+                android:id="@+id/oliver_progressbar"/>
+        </LinearLayout>
+        
+        
+
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_horizontal_margin"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/black_transparent"
+        android:orientation="vertical">
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <ImageView
+            	android:id="@+id/VilmaImage"
+            	android:layout_width="60dp"
+            	android:layout_height="60dp"
+            	android:layout_gravity="left"
+            	android:scaleType="fitCenter"
+            	android:padding="@dimen/activity_horizontal_margin"
+            	android:contentDescription="@string/olivers_image_string"
+            	android:src="@drawable/vilma_icon" />
+            
+            <TextView 
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:textColor="@color/white_transparent"
+                android:typeface="serif"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:text="@string/vilma_string"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            
+        </LinearLayout>
+
+    </LinearLayout>    
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_horizontal_margin"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        
+            <ImageButton
+                android:id="@+id/settings_button"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/settings_icon"
+                android:onClick="settingsButtonClick"/>
+            
+            <ImageButton
+                android:id="@+id/trash_button_1"
+                android:contentDescription="@string/olivers_image_string"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/trash_image_1"/>
+            
+            <ImageButton
+                android:id="@+id/save_button_1"
+                android:contentDescription="@string/olivers_image_string"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/save_icon"/>
+            
+            <ImageButton
+                android:id="@+id/folder_button_1"
+                android:contentDescription="@string/olivers_image_string"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/folder_icon"/>
+            
+            
+            <ImageButton
+                android:id="@+id/bottle_button_1"
+                android:contentDescription="@string/olivers_image_string"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bottle_icon_2" />
+            
+                    
+        </LinearLayout>
+
+	
+
+</LinearLayout>
